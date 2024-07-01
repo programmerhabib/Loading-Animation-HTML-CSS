@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.loader{
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+.ball{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.first-ball{
+    top: -25px;
+    background: #fffb00;
+    animation: first 1s infinite;
+    -webkit-animation: first 1s infinite;
+}
+@keyframes first {
+    50%,100%{
+        top: 25px;
+    }
+}
+.second-ball{
+    right: -25px;
+    background: #ff0000;
+    animation: second 1s infinite;
+    -webkit-animation: second 1s infinite;
+}
+@keyframes second {
+    50%,100%{
+        right: 25px;
+    }
+}
+.third-ball{
+    bottom: -25px;
+    background: #008000;
+    animation: second 1s infinite;
+    -webkit-animation: third 1s infinite;
+}
+@keyframes third {
+    50%,100%{
+        bottom: 25px;
+    }
+}
+.fourth-ball{
+    left: -25px;
+    background: #0000ff;
+    animation: fourth 1s infinite;
+    -webkit-animation: fourth 1s infinite;
+}
+@keyframes fourth {
+    50%,100%{
+        left: 25px;
+    }
+}
